@@ -24,3 +24,8 @@ error_log
 # Logs and databases #
 ######################
 *.log
+
+# test site #
+#############
+mark2/*
+cgi-bin/*
