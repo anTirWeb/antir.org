@@ -1,0 +1,10 @@
+.cs-field-image_select label img {
+	max-width: 106px !important;
+}
+
+#setting-error-tgmpa {
+	clear: both;
+	display: block;
+}
+#customize-control-woocommerce_catalog_columns,
+.bsf-update-nag, #vc_license-activation-notice, .rs-update-notice-wrap {display: none !important;}

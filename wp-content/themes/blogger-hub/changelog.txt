@@ -1,0 +1,15 @@
+Version 0.1
+  i) Initial Version Released.
+
+Version 0.2
+  i) Resolved minor theme issues
+
+Version 0.3
+  i)  Changed the pexels image url to pixabay image url.
+  ii) Changed screenshot.
+
+ Version 0.4
+  i)   Added typography.
+  ii)  Added Post Formats.
+  iii) updated pot file.
+  iv)  Resolved theme errors.
