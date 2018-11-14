@@ -1,0 +1,9 @@
+# don't track backups #
+#######################
+wp-content/aiowps_backups/*
+
+# don't track csvs #
+####################
+*.csv
+*log.txt
+error_log

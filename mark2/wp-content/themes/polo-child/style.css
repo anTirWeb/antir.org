@@ -1,0 +1,387 @@
+/*
+Theme Name: Polo Child
+Theme URI: http://crumina.net/polo/
+Author: Crumina Team
+Author URI: http://crumina.net/
+Description: Powerful multipurpose theme
+Version: 1
+Template:polo
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: polo
+Tags: white, blue, light, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, translation-ready
+*/
+
+/*****************************************************************
+Add Custom styles below 
+******************************************************************/
+
+#main-content a,
+#sidebar a {
+    color: #11758D;
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+
+#logo img {
+    display: block;
+    max-width: 100%;
+    margin: 14px 0;
+}
+
+
+/*.main-menu #logo {*/
+/*    margin-left: 40px;*/
+/*    margin-right: 40px;*/
+/*}*/
+
+/* ----------------------------------------------------------------
+    HEADER
+-----------------------------------------------------------------*/
+
+#header {
+    position: relative;
+    background-color: #000 !important;
+    border-bottom: 1px solid #eee;
+    z-index: 199 !important;
+    font-size: 14px !important;
+    color: #fff;
+}
+
+#header .container {
+    position: relative;
+}
+
+#header.header-transparent + #slider,
+#header.header-transparent + .page-title-extended,
+#header.header-transparent + .page-title-video,
+#header.header-transparent + .page-title-parallax,
+#header.header-transparent + .fullscreen,
+#header.header-transparent + .fullscreen,
+#header.header-transparent + .halfscreen,
+#header.header-transparent + #google-map,
+#header.header-light-transparent + #slider,
+#header.header-light-transparent + .page-title-extended,
+#header.header-light-transparent + .page-title-video,
+#header.header-light-transparent + .page-title-parallax,
+#header.header-light-transparent + .fullscreen,
+#header.header-light-transparent + .fullscreen,
+#header.header-light-transparent + .halfscreen,
+#header.header-light-transparent + #google-map,
+#header.header-dark-transparent + #slider,
+#header.header-dark-transparent + .page-title-extended,
+#header.header-dark-transparent + .page-title-video,
+#header.header-dark-transparent + .page-title-parallax,
+#header.header-dark-transparent + .fullscreen,
+#header.header-dark-transparent + .fullscreen,
+#header.header-dark-transparent + .halfscreen,
+#header.header-dark-transparent + #google-map {
+    top: -115px;
+    margin-bottom: -115px;
+}
+
+#header, #header-wrap, #header.header-sticky:not(.header-static) nav#mainMenu ul.main-menu, #mainMenu > ul, #header.header-sticky:not(.header-static) .nav-main-menu-responsive, #header .side-panel-button {
+    height: 115px;
+}
+#header, #header-wrap, #header.header-sticky:not(.header-static), .header-sticky:not(.header-static) #logo, .header-sticky:not(.header-static) #header-wrap, .header-sticky:not(.header-static) nav#mainMenu ul.main-menu, .header-sticky:not(.header-static) #mainMenu > ul > li > a, .header-sticky:not(.header-static) .nav-main-menu-responsive, .header-sticky:not(.header-static) #shopping-cart a, .header-sticky:not(.header-static) #top-search a, .header-sticky:not(.header-static) .side-panel-button {      
+    
+}
+
+#header-wrap {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+}
+
+nav .main-menu .dropdown-menu {
+    border-color: #e4bb1b; /*#11758d*/
+}
+
+#mainMenu a, #mainMenu > ul > li > a {
+    line-height: 40px;
+    height: 70px;
+}
+
+nav .main-menu .dropdown-menu a, nav .main-menu .dropdown-submenu > span.dropdown-menu-title-only {
+    font-size: 14px !important;
+    height: 40px;
+}
+
+#mainMenu a, #mainMenu > ul > li > a.sub-menu-link {
+    font-size: 14px !important;
+    height: 50px;
+    text-decoration: none !important;
+}
+
+
+a:link:visited,
+a:link:inactive {
+  color: #9e0b0f  !important;
+}
+a:link:hover,
+a:link:focus {
+	color: #e4bb1b  !important;
+}
+
+
+/*
+body.wide #header.header-fullwidth #header-wrap .container {
+  padding: 15px 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+*/
+/*
+nav.mega-menu .dropdown-menu {
+    margin-top: 14px;
+}
+
+#menu-main-menu,
+#menu-main-menu > li > a,
+nav .main-menu > span.dropdown-menu-title-only {
+  font-size: 14px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.dropdown-menu .menu-item a {
+  font-size: 14px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.dropdown-menu .menu-item a:link:hover,
+.dropdown-menu .menu-item a:link:focus {
+  font-size: 14px !important;
+  color: #e4bb1b  !important;
+  text-decoration: none !important;
+}
+
+nav .main-menu .dropdown-menu a, 
+nav .main-menu .dropdown-submenu > span.dropdown-menu-title-only {
+  
+}
+
+nav .dropdown-menu a:link:hover,
+nav .dropdown-menu a:link:focus {
+	color: #e4bb1b  !important;
+	text-decoration: none !important;
+}
+
+#mainMenu a {
+    line-height: 20px;
+    font-size: 14px !important;
+    height: 50px;
+    text-decoration: none !important;
+}
+
+#mainMenu ul > li > a {
+  text-decoration: none !important;
+  height: 50px !important;
+}
+*/
+
+/*desktop*/
+@media (min-width: 1000px ) {
+    #logo .logo-img-wrap { 
+        width: 400px !important;
+    }
+}
+
+/* smaller than desktop */
+/* width: 300px !important;*/
+@media (max-width: 999px ) {
+    #logo .logo-img-wrap { 
+        width: 300px !important;
+    }
+}
+
+.breadcrumb {
+  font-size: 14px !important;
+}
+
+/* General Style changes */
+
+
+
+/* Events Manager Style Changes */
+
+.event-time {
+  text-align: center;
+}
+
+.css-events-list table.events-table td {
+    padding: 8px;
+}
+
+.event-heading {
+  margin-top: 1em;
+}
+
+.em-tags-list {
+    list-style-type: none;
+}
+
+#em-form-when #start-time,
+#em-form-when #end-time {
+      line-height: 1em !important;
+}
+
+/* body font changes on events pages - this prevents it */
+body.event-template-default p {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.event-template-default > a:link {
+    color: #11758D !important;
+}
+body.event-template-default a:not(.menu-item) {
+    color: #e4bb1b;
+    text-decoration: underline !important;
+}
+
+a:link.event-description,
+a:link:visited.event-description,
+a:link.single-event,
+a:link:visited.single-event {
+  color: #11758D !important;
+  font-weight: bold;
+}
+
+a:link.event-category-notes,
+a:link:visited.event-category-notes  {
+  font-style: italic;
+  color: #676767 !important;
+}
+
+
+
+#footer.background-dark a:not(.button) {
+    color: #e4bb1b !important;
+}
+
+.op_royal {
+    text-align: center;
+}
+
+.op_royal .table-bordered > tbody > tr > td, 
+.op_royal .table-bordered > tbody > tr > th, 
+.op_royal .table-bordered > tfoot > tr > td, 
+.op_royal .table-bordered > tfoot > tr > th, 
+.op_royal .table-bordered > thead > tr > td, 
+.op_royal .table-bordered > thead > tr > th {
+    border: none
+}
+
+.op-device {
+  height: 80px;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* Ultimate Member Style Customizations */
+
+.um .um-tip:hover, .um .um-field-radio.active:not(.um-field-radio-state-disabled) i, .um .um-field-checkbox.active:not(.um-field-radio-state-disabled) i, .um .um-member-name a:hover, .um .um-member-more a:hover, .um .um-member-less a:hover, .um .um-members-pagi a:hover, .um .um-cover-add:hover, .um .um-profile-subnav a.active, .um .um-item-meta a, .um-account-name a:hover, .um-account-nav a.current, .um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon, .um-dropdown li a:hover, i.um-active-color, span.um-active-color {
+	color: #e4bb1b !important;
+}
+.um input[type=submit].um-button:hover, .um a.um-button:hover {
+    background-color: #d4b415  !important;
+	color: #000  !important;
+}
+
+.um input[type=submit].um-button, .um input[type=submit].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
+    background: #e4bb1b  !important;
+	color: #000  !important;
+}
+
+/* Datepicker styles to override the jquery ones which are weird */
+
+.ui-datepicker {
+	max-width: 20em !important;
+	min-width: 10em !important;
+	
+}
+
+.ui-datepicker .ui-datepicker-title {
+	color: #444 !important;
+	font-size: 1em;
+	line-height: auto;
+}
+
+.ui-datepicker .ui-datepicker-title select,
+.ui-datepicker .ui-datepicker-month select {
+      font-size: .8em !important;
+      padding: 2px !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+      color: #676767 !important;
+}
+
+/* Forms */
+
+.frm_style_formidable-style.with_frm_style .wp-editor-wrap,
+.frm_style_formidable-style.with_frm_style textarea {
+  width: 100% !important;
+}
+
+div.time-picker li {
+    cursor: pointer;
+    height: 20px;
+    font-size: 12px;
+    padding: 4px 3px;
+}
+
+div.time-picker li.selected {
+    background: #e4bb1b;
+    color: #000;
+}
+
+#menu-management select {
+    max-width: 100%;
+}
+
+.with_frm_style .chosen-container .chosen-results .highlighted {
+    background-color: #e4bb1b !important;
+    color: #000 !important;
+}
+
+.teal {
+    color: #11758D !important;
+}
+
+.red {
+    color: #9e0b0f;
+}
+
+.readonly {
+  color: #A1A1A1 !important
+}
+
+.hero-slider h2 {
+  display: none;
+}
+
+.wpb_content_element {margin-bottom: 0 !important; }
+
+::-moz-selection {
+  background: #e4bb1b !important;
+  color: #000 !important;
+}
+
+::selection {
+    background: #e4bb1b !important;
+    color: #000 !important;
+}
+
+.sidebar .widget-title::after {
+    border-top: 4px solid #e4bb1b;
+}

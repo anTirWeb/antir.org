@@ -1,0 +1,9 @@
+[02-Oct-2018 23:40:05 UTC] PHP Fatal error:  Allowed memory size of 100663296 bytes exhausted (tried to allocate 1024 bytes) in /home/antir/public_html/mark2/wp-includes/cache.php on line 650
+[02-Oct-2018 23:40:16 UTC] PHP Fatal error:  Allowed memory size of 100663296 bytes exhausted (tried to allocate 72 bytes) in /home/antir/public_html/mark2/wp-includes/class-wp-hook.php on line 286
+[02-Oct-2018 23:40:22 UTC] PHP Fatal error:  Allowed memory size of 100663296 bytes exhausted (tried to allocate 80 bytes) in /home/antir/public_html/mark2/wp-includes/wp-db.php on line 2516
+[02-Oct-2018 23:44:06 UTC] PHP Fatal error:  Allowed memory size of 100663296 bytes exhausted (tried to allocate 32 bytes) in /home/antir/public_html/mark2/wp-includes/wp-db.php on line 2516
+[03-Oct-2018 00:28:53 UTC] PHP Notice:  ob_end_flush(): failed to send buffer of zlib output compression (0) in /home/antir/public_html/mark2/wp-includes/functions.php on line 3743
+[03-Oct-2018 00:33:26 UTC] PHP Notice:  ob_end_flush(): failed to send buffer of zlib output compression (0) in /home/antir/public_html/mark2/wp-includes/functions.php on line 3743
+[03-Oct-2018 00:33:31 UTC] PHP Notice:  ob_end_flush(): failed to send buffer of zlib output compression (0) in /home/antir/public_html/mark2/wp-includes/functions.php on line 3743
+[03-Oct-2018 01:47:33 UTC] PHP Notice:  ob_end_flush(): failed to send buffer of zlib output compression (0) in /home/antir/public_html/mark2/wp-includes/functions.php on line 3743
+[03-Oct-2018 01:47:38 UTC] PHP Notice:  ob_end_flush(): failed to send buffer of zlib output compression (0) in /home/antir/public_html/mark2/wp-includes/functions.php on line 3743
