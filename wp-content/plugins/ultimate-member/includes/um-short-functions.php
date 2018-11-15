@@ -836,19 +836,6 @@ function um_is_temp_file( $filename ) {
 
 
 /**
- * Get core page url
- *
- * @param $time1
- * @param $time2
- *
- * @return mixed|void
- */
-function um_time_diff( $time1, $time2 ) {
-	return UM()->datetime()->time_diff( $time1, $time2 );
-}
-
-
-/**
  * Get user's last login timestamp
  *
  * @param $user_id
@@ -867,19 +854,13 @@ function um_user_last_login_timestamp( $user_id ) {
 /**
  * Get user's last login (time diff)
  *
- * @param $user_id
+ * @param int $user_id
  *
- * @return mixed|string|void
+ * @return string
  */
 function um_user_last_login( $user_id ) {
 	$value = get_user_meta( $user_id, '_um_last_login', true );
-	if ( $value ) {
-		$value = um_time_diff( $value, current_time( 'timestamp' ) );
-	} else {
-		$value = '';
-	}
-
-	return $value;
+	return ! empty( $value ) ? UM()->datetime()->time_diff( $value, current_time( 'timestamp' ) ) : '';
 }
 
 
@@ -1671,6 +1652,9 @@ function um_get_cover_uri( $image, $attrs ) {
 	$uri_common = false;
 	$ext = '.' . pathinfo( $image, PATHINFO_EXTENSION );
 
+	$ratio = str_replace(':1','',UM()->options()->get( 'profile_cover_ratio' ) );
+	$height = round( $attrs / $ratio );
+
 	if ( is_multisite() ) {
 		//multisite fix for old customers
 		$multisite_fix_dir = UM()->uploader()->get_upload_base_dir();
@@ -1682,8 +1666,8 @@ function um_get_cover_uri( $image, $attrs ) {
 			$uri_common = $multisite_fix_url . um_user( 'ID' ) . "/cover_photo{$ext}?" . current_time( 'timestamp' );
 		}
 
-		if ( file_exists( $multisite_fix_dir . um_user( 'ID' ) . DIRECTORY_SEPARATOR . "cover_photo-{$attrs}x{$attrs}{$ext}" ) ) {
-			$uri_common = $multisite_fix_url . um_user( 'ID' ) . "/cover_photo-{$attrs}x{$attrs}{$ext}?". current_time( 'timestamp' );
+		if ( file_exists( $multisite_fix_dir . um_user( 'ID' ) . DIRECTORY_SEPARATOR . "cover_photo-{$attrs}x{$height}{$ext}" ) ) {
+			$uri_common = $multisite_fix_url . um_user( 'ID' ) . "/cover_photo-{$attrs}x{$height}{$ext}?". current_time( 'timestamp' );
 		} elseif ( file_exists( $multisite_fix_dir . um_user( 'ID' ) . DIRECTORY_SEPARATOR . "cover_photo-{$attrs}{$ext}" ) ) {
 			$uri_common = $multisite_fix_url . um_user( 'ID' ) . "/cover_photo-{$attrs}{$ext}?" . current_time( 'timestamp' );
 		}
@@ -1693,8 +1677,8 @@ function um_get_cover_uri( $image, $attrs ) {
 		$uri = UM()->uploader()->get_upload_base_url() . um_user( 'ID' ) . "/cover_photo{$ext}?" . current_time( 'timestamp' );
 	}
 
-	if ( file_exists( UM()->uploader()->get_upload_base_dir() . um_user( 'ID' ) . DIRECTORY_SEPARATOR . "cover_photo-{$attrs}x{$attrs}{$ext}" ) ) {
-		$uri = UM()->uploader()->get_upload_base_url() . um_user( 'ID' ) . "/cover_photo-{$attrs}x{$attrs}{$ext}?". current_time( 'timestamp' );
+	if ( file_exists( UM()->uploader()->get_upload_base_dir() . um_user( 'ID' ) . DIRECTORY_SEPARATOR . "cover_photo-{$attrs}x{$height}{$ext}" ) ) {
+		$uri = UM()->uploader()->get_upload_base_url() . um_user( 'ID' ) . "/cover_photo-{$attrs}x{$height}{$ext}?". current_time( 'timestamp' );
 	} elseif ( file_exists( UM()->uploader()->get_upload_base_dir() . um_user( 'ID' ) . DIRECTORY_SEPARATOR . "cover_photo-{$attrs}{$ext}" ) ) {
 		$uri = UM()->uploader()->get_upload_base_url() . um_user( 'ID' ) . "/cover_photo-{$attrs}{$ext}?" . current_time( 'timestamp' );
 	}
@@ -2179,17 +2163,16 @@ function um_user( $data, $attrs = null ) {
 			}
 
 
-			if ($op == 'field' && UM()->options()->get( 'display_name_field' ) != '') {
+			if ( $op == 'field' && UM()->options()->get( 'display_name_field' ) != '' ) {
 				$fields = array_filter( preg_split( '/[,\s]+/', UM()->options()->get( 'display_name_field' ) ) );
 				$name = '';
 
-				foreach ($fields as $field) {
-					if (um_profile( $field )) {
+				foreach ( $fields as $field ) {
+					if ( um_profile( $field ) ) {
 						$name .= um_profile( $field ) . ' ';
-					} else if (um_user( $field )) {
+					} elseif ( um_user( $field ) && $field != 'display_name' ) {
 						$name .= um_user( $field ) . ' ';
 					}
-
 				}
 			}
 

@@ -1,6 +1,6 @@
 <div style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666;">
 <div style="color: #444444; font-weight: normal;">
-<div style="text-align: center; font-weight: 600; font-size: 26px; padding: 10px 0; border-bottom: solid 3px #e4bb1b;"><img src="http://mark2.antir.org/wp-content/uploads/2018/09/anTirBadge_transp.png" height="80" align="middle" />
+<div style="text-align: center; font-weight: 600; font-size: 26px; padding: 10px 0; border-bottom: solid 3px #e4bb1b;"><img src="http://www.antir.org/wp-content/uploads/2018/09/an-tir_kingdom_160.png" alt="" width="70" height="81" /><br />
 <p>{site_name}</p>
 </div>
 <div style="clear: both;"> </div>

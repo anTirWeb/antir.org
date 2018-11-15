@@ -113,6 +113,7 @@ nav .main-menu .dropdown-menu {
 nav .main-menu .dropdown-menu a, nav .main-menu .dropdown-submenu > span.dropdown-menu-title-only {
     font-size: 14px !important;
     height: 40px;
+    color: #ffffff !important;
 }
 
 #mainMenu a, #mainMenu > ul > li > a.sub-menu-link {
