@@ -45,6 +45,8 @@ if ( ! class_exists( 'um\core\Profile' ) ) {
 		 * Delete profile avatar AJAX handler
 		 */
 		function ajax_delete_profile_photo() {
+			UM()->check_ajax_nonce();
+
 			/**
 			 * @var $user_id
 			 */
@@ -61,6 +63,8 @@ if ( ! class_exists( 'um\core\Profile' ) ) {
 		 * Delete cover photo AJAX handler
 		 */
 		function ajax_delete_cover_photo() {
+			UM()->check_ajax_nonce();
+
 			/**
 			 * @var $user_id
 			 */
@@ -180,14 +184,14 @@ if ( ! class_exists( 'um\core\Profile' ) ) {
 		 */
 		function tabs_enabled() {
 			$tabs = $this->tabs();
-			foreach( $tabs as $id => $info ){
+			foreach ( $tabs as $id => $info ) {
 				if ( isset( $info['name'] ) ) {
-					if ( UM()->options()->get('profile_tab_'.$id) || isset( $info['_builtin'] ) ) {
-						$primary[$id] = $info['name'];
+					if ( UM()->options()->get( 'profile_tab_' . $id ) || isset( $info['_builtin'] ) ) {
+						$primary[ $id ] = $info['name'];
 					}
 				}
 			}
-			return ( isset( $primary ) ) ? $primary : '';
+			return isset( $primary ) ? $primary : '';
 		}
 
 
@@ -218,7 +222,7 @@ if ( ! class_exists( 'um\core\Profile' ) ) {
 		 */
 		function can_view_tab( $tab ) {
 
-			$target_id = UM()->user()->target_id;
+			$target_id = (int) UM()->user()->target_id;
 			if ( empty( $target_id ) ) {
 				return true;
 			}

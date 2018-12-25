@@ -37,7 +37,6 @@ if ( ! class_exists( 'um\admin\Admin' ) ) {
 			add_action( 'um_admin_do_action__purge_temp', array( &$this, 'purge_temp' ) );
 			add_action( 'um_admin_do_action__manual_upgrades_request', array( &$this, 'manual_upgrades_request' ) );
 			add_action( 'um_admin_do_action__duplicate_form', array( &$this, 'duplicate_form' ) );
-			add_action( 'um_admin_do_action__um_language_downloader', array( &$this, 'um_language_downloader' ) );
 			add_action( 'um_admin_do_action__um_hide_locale_notice', array( &$this, 'um_hide_notice' ) );
 			add_action( 'um_admin_do_action__um_can_register_notice', array( &$this, 'um_hide_notice' ) );
 			add_action( 'um_admin_do_action__um_hide_exif_notice', array( &$this, 'um_hide_notice' ) );
@@ -80,12 +79,24 @@ if ( ! class_exists( 'um\admin\Admin' ) ) {
 
 			if ( empty( $last_request ) || time() > $last_request + DAY_IN_SECONDS ) {
 
-				delete_transient( 'update_plugins' );
-				delete_site_transient( 'update_plugins' );
+				if ( is_multisite() ) {
+					$blogs_ids = get_sites();
+					foreach( $blogs_ids as $b ) {
+						switch_to_blog( $b->blog_id );
+						wp_clean_update_cache();
 
-				UM()->plugin_updater()->um_checklicenses();
+						UM()->plugin_updater()->um_checklicenses();
 
-				update_option( 'um_last_manual_upgrades_request', time() );
+						update_option( 'um_last_manual_upgrades_request', time() );
+						restore_current_blog();
+					}
+				} else {
+					wp_clean_update_cache();
+
+					UM()->plugin_updater()->um_checklicenses();
+
+					update_option( 'um_last_manual_upgrades_request', time() );
+				}
 
 				$url = add_query_arg( array( 'page' => 'ultimatemember', 'update' => 'got_updates' ), admin_url( 'admin.php' ) );
 			} else {
@@ -205,41 +216,6 @@ if ( ! class_exists( 'um\admin\Admin' ) ) {
 			$url = add_query_arg('update','form_duplicated',$url);
 
 			exit( wp_redirect( $url ) );
-
-		}
-
-
-		/**
-		 * Download a language remotely
-		 *
-		 * @param $action
-		 */
-		function um_language_downloader( $action ) {
-			if ( !is_admin() || !current_user_can('manage_options') ) die();
-
-			$locale = get_option('WPLANG');
-			if ( !$locale ) return;
-			if ( !isset( UM()->available_languages[$locale] ) ) return;
-
-			$path = UM()->files()->upload_basedir;
-			$path = str_replace('/uploads/ultimatemember','',$path);
-			$path = $path . '/languages/plugins/';
-			$path = str_replace('//','/',$path);
-
-			$remote = 'https://ultimatemember.com/wp-content/languages/plugins/ultimatemember-' . $locale . '.po';
-			$remote2 = 'https://ultimatemember.com/wp-content/languages/plugins/ultimatemember-' . $locale . '.mo';
-
-			$remote_tmp = download_url( $remote, $timeout = 300 );
-			copy( $remote_tmp, $path . 'ultimatemember-' . $locale . '.po' );
-			unlink( $remote_tmp );
-
-			$remote2_tmp = download_url( $remote2, $timeout = 300 );
-			copy( $remote2_tmp, $path . 'ultimatemember-' . $locale . '.mo' );
-			unlink( $remote2_tmp );
-
-			$url = remove_query_arg('um_adm_action', UM()->permalinks()->get_current_url() );
-			$url = add_query_arg('update','language_updated',$url);
-			exit( wp_redirect($url) );
 
 		}
 

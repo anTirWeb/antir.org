@@ -53,7 +53,7 @@
 	   
 	    } else if( $is_event_steward ) {
 	       
-	       $welcome_msg = "<h3>Welcome Event Steward</h3><p>You can edit your own events and save changes but a Calendar Admin needs to approve them before they can be published. Please proceed with caution.</p>";
+	       $welcome_msg = "<h3>Welcome Event Steward</h3><p>You can edit your own events and save changes. <br/><strong>Please proceed with caution.</strong><br/> If you do not see your event listed, please send the <a href=\"mailto:calendar@antir.org;webminister@antir.org;subject:'Event Steward Requests Access to new event(s)'\">Kingdom Events Deputy an email</a> and request access to your event.</p><p><a href=\"https://antirsca-my.sharepoint.com/:b:/g/personal/webminister_antir_org/EeYxpKon0gNAjGXNveVq8FMB1DIQc6VCjQ57j45Sjl099Q?e=ED2Bml\" target=\"_blank\">Event Editing instructions for Event Stewards <i class=\"fa fa-external-link\"></i></a>";
 	       //echo "Getting here.<br/>Owner is " . $args['owner'] . "<br/>";
 	       
 	       //$args['view'] = 'future';

@@ -315,4 +315,15 @@ class FrmProAppController {
 			return $content;
 		}
 	}
+
+	/**
+	 * @since 3.04.02
+	 */
+	public static function remove_upsells() {
+		if ( is_callable( 'FrmAppController::remove_upsells' ) ) {
+			FrmAppController::remove_upsells();
+		} else {
+			remove_action( 'frm_before_settings', 'FrmSettingsController::license_box' );
+		}
+	}
 }

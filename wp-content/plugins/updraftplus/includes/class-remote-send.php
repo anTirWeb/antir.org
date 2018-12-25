@@ -213,7 +213,8 @@ abstract class UpdraftPlus_RemoteSend {
 		if (!preg_match('/^([a-f0-9]+)\.migrator.updraftplus.com$/', $name_indicator, $matches)) return $response;
 		
 		if (defined('UPDRAFTPLUS_THIS_IS_CLONE')) {
-			do_action('updraftplus_temporary_clone_ready_for_restore');
+			$job_id = (is_array($data) && !empty($data['job_id'])) ? $data['job_id'] : null;
+			do_action('updraftplus_temporary_clone_ready_for_restore', $job_id);
 		}
 
 		return $this->return_rpc_message(array(
@@ -224,7 +225,7 @@ abstract class UpdraftPlus_RemoteSend {
 
 	public function updraftplus_initial_jobdata($initial_jobdata, $options, $split_every) {
 
-		if (is_array($options) && !empty($options['extradata']) && preg_match('#services=remotesend/(\d+)#', $options['extradata'], $matches)) {
+		if (is_array($options) && !empty($options['extradata']) && !empty($options['extradata']['services']) && preg_match('#remotesend/(\d+)#', $options['extradata']['services'], $matches)) {
 
 			// Load the option now - don't wait until send time
 			$site_id = $matches[1];

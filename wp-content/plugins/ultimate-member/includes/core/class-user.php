@@ -87,8 +87,11 @@ if ( ! class_exists( 'um\core\User' ) ) {
 
 			add_action( 'init', array( &$this, 'check_membership' ), 10 );
 
-			add_action( 'delete_user', array( &$this, 'delete_user_handler' ), 10, 1 );
-			add_action( 'wpmu_delete_user', array( &$this, 'delete_user_handler' ), 10, 1 );
+			if ( is_multisite() ) {
+				add_action( 'delete_user', array( &$this, 'delete_user_handler' ), 10, 1 );
+			} else {
+				add_action( 'wpmu_delete_user', array( &$this, 'delete_user_handler' ), 10, 1 );
+			}
 		}
 
 
@@ -96,6 +99,8 @@ if ( ! class_exists( 'um\core\User' ) ) {
 		 * @param $user_id
 		 */
 		function delete_user_handler( $user_id ) {
+			error_log( '----------------' );
+			error_log( $user_id );
 
 			um_fetch_user( $user_id );
 
@@ -313,7 +318,7 @@ if ( ! class_exists( 'um\core\User' ) ) {
 
 
 		/**
-		 * Generate User Profile Slug and seve to meta
+		 * Generate User Profile Slug and save to meta
 		 *
 		 * @param int $user_id
 		 * @param bool $force
@@ -355,7 +360,7 @@ if ( ! class_exists( 'um\core\User' ) ) {
 
 				} else {
 
-					$user_in_url = sanitize_title( $user_in_url );
+					$user_in_url = urlencode( $user_in_url );
 
 				}
 			}
@@ -1535,7 +1540,7 @@ if ( ! class_exists( 'um\core\User' ) ) {
 		 */
 		function is_private_profile( $user_id ) {
 			$privacy = get_user_meta( $user_id, 'profile_privacy', true );
-			if ( $privacy == __('Only me','ultimate-member') ) {
+			if ( $privacy == __('Only me','ultimate-member') || $privacy == 'Only me' ) {
 				return true;
 			}
 			return false;

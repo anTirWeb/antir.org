@@ -1,0 +1,577 @@
+0000.000 (0) Opened log file at time: Tue, 25 Dec 2018 00:51:10 +0000 on http://www.antir.org
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0 PHP: 7.1.25 (cgi-fcgi, Linux vps1.antir.org 3.10.0-862.9.1.el7.x86_64 #1 SMP Mon Jul 16 16:29:36 UTC 2018 x86_64) MySQL: 5.6.41 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 60.8M | 62M) multisite: N openssl: OpenSSL 1.0.2q  20 Nov 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.043 (0) Free space on disk containing Updraft's temporary directory: 16426.7 MB
+0000.045 (0) Deleting old log file: log.210d1a3330a6.txt
+0000.046 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB: 1 (schedule: weekly)
+0000.051 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.054 (0) Set semaphore last lock (fd) time to 2018-12-25 00:51:10
+0000.054 (0) Semaphore lock (fd) complete
+0000.056 (0) Backup run: resumption=0, nonce=7febfc3947c0, file_nonce=7febfc3947c0 begun at=1545699070 (0s ago), job type=backup
+0000.057 (0) Scheduling a resumption (1) after 300 seconds (1545699370) in case this run gets aborted
+0000.066 (0) Checking if we have a zip executable available
+0000.066 (0) Testing: /usr/bin/zip
+0000.073 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.074 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.075 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.075 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.076 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.081 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.082 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.087 (0) Working binary zip found: /usr/bin/zip
+0000.088 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.089 (0) Creation of backups of directories: beginning
+0000.090 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.237 (0) Total entities for the zip file: 1085 directories, 7849 files (0 skipped as non-modified), 132.2 MB
+0000.240 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.242 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.243 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.245 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.247 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.248 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (20 MB, 7849 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0001.482 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: size is now: 6.90 MB
+0001.485 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 600 files added (on-disk size: 7069 KB)
+0001.487 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 700 files added (on-disk size: 7069 KB)
+0001.489 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 800 files added (on-disk size: 7069 KB)
+0001.491 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 900 files added (on-disk size: 7069 KB)
+0001.492 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1000 files added (on-disk size: 7069 KB)
+0001.493 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.9 MB, 7849 files batched, 501 (1002) added so far); re-opening (prior size: 7069 KB)
+0001.782 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: size is now: 9.10 MB
+0001.786 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1100 files added (on-disk size: 9367.1 KB)
+0001.788 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1200 files added (on-disk size: 9367.1 KB)
+0001.790 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1300 files added (on-disk size: 9367.1 KB)
+0001.791 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1400 files added (on-disk size: 9367.1 KB)
+0001.793 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1500 files added (on-disk size: 9367.1 KB)
+0001.794 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8 MB, 7849 files batched, 501 (1503) added so far); re-opening (prior size: 9367.1 KB)
+0002.264 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: size is now: 12.30 MB
+0002.267 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1600 files added (on-disk size: 12624.8 KB)
+0002.269 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1700 files added (on-disk size: 12624.8 KB)
+0002.271 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1800 files added (on-disk size: 12624.8 KB)
+0002.272 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 1900 files added (on-disk size: 12624.8 KB)
+0002.274 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2000 files added (on-disk size: 12624.8 KB)
+0002.275 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.5 MB, 7849 files batched, 501 (2004) added so far); re-opening (prior size: 12624.8 KB)
+0002.714 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2100 files added (on-disk size: 13976.9 KB)
+0002.716 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2200 files added (on-disk size: 13976.9 KB)
+0002.718 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2300 files added (on-disk size: 13976.9 KB)
+0002.720 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2400 files added (on-disk size: 13976.9 KB)
+0002.722 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2500 files added (on-disk size: 13976.9 KB)
+0002.723 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (0.1 MB, 7849 files batched, 501 (2505) added so far); re-opening (prior size: 13976.9 KB)
+0002.998 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2600 files added (on-disk size: 14210.3 KB)
+0003.001 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2700 files added (on-disk size: 14210.3 KB)
+0003.002 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2800 files added (on-disk size: 14210.3 KB)
+0003.004 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 2900 files added (on-disk size: 14210.3 KB)
+0003.006 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3000 files added (on-disk size: 14210.3 KB)
+0003.007 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.1 MB, 7849 files batched, 501 (3006) added so far); re-opening (prior size: 14210.3 KB)
+0003.711 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: size is now: 16.70 MB
+0003.714 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3100 files added (on-disk size: 17108.3 KB)
+0003.716 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3200 files added (on-disk size: 17108.3 KB)
+0003.718 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3300 files added (on-disk size: 17108.3 KB)
+0003.720 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3400 files added (on-disk size: 17108.3 KB)
+0003.722 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3500 files added (on-disk size: 17108.3 KB)
+0003.722 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.6 MB, 7849 files batched, 501 (3507) added so far); re-opening (prior size: 17108.3 KB)
+0004.147 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3600 files added (on-disk size: 18679.1 KB)
+0004.149 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3700 files added (on-disk size: 18679.1 KB)
+0004.151 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3800 files added (on-disk size: 18679.1 KB)
+0004.153 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 3900 files added (on-disk size: 18679.1 KB)
+0004.155 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4000 files added (on-disk size: 18679.1 KB)
+0004.155 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (23.3 MB, 7849 files batched, 501 (4008) added so far); re-opening (prior size: 18679.1 KB)
+0004.906 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4100 files added (on-disk size: 21332.6 KB)
+0004.908 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4200 files added (on-disk size: 21332.6 KB)
+0004.910 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4300 files added (on-disk size: 21332.6 KB)
+0004.912 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4400 files added (on-disk size: 21332.6 KB)
+0004.913 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4500 files added (on-disk size: 21332.6 KB)
+0004.914 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11.5 MB, 7849 files batched, 501 (4509) added so far); re-opening (prior size: 21332.6 KB)
+0005.677 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4600 files added (on-disk size: 25572.3 KB)
+0005.679 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4700 files added (on-disk size: 25572.3 KB)
+0005.681 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4800 files added (on-disk size: 25572.3 KB)
+0005.683 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 4900 files added (on-disk size: 25572.3 KB)
+0005.685 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5000 files added (on-disk size: 25572.3 KB)
+0005.686 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.8 MB, 7849 files batched, 501 (5010) added so far); re-opening (prior size: 25572.3 KB)
+0006.187 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5100 files added (on-disk size: 27382.2 KB)
+0006.189 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5200 files added (on-disk size: 27382.2 KB)
+0006.191 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5300 files added (on-disk size: 27382.2 KB)
+0006.193 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5400 files added (on-disk size: 27382.2 KB)
+0006.195 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5500 files added (on-disk size: 27382.2 KB)
+0006.195 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.3 MB, 7849 files batched, 501 (5511) added so far); re-opening (prior size: 27382.2 KB)
+0006.620 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5600 files added (on-disk size: 28895.2 KB)
+0006.622 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5700 files added (on-disk size: 28895.2 KB)
+0006.624 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5800 files added (on-disk size: 28895.2 KB)
+0006.626 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 5900 files added (on-disk size: 28895.2 KB)
+0006.628 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6000 files added (on-disk size: 28895.2 KB)
+0006.629 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11.4 MB, 7849 files batched, 501 (6012) added so far); re-opening (prior size: 28895.2 KB)
+0007.434 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6100 files added (on-disk size: 32170.4 KB)
+0007.436 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6200 files added (on-disk size: 32170.4 KB)
+0007.438 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6300 files added (on-disk size: 32170.4 KB)
+0007.440 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6400 files added (on-disk size: 32170.4 KB)
+0007.442 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6500 files added (on-disk size: 32170.4 KB)
+0007.442 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.5 MB, 7849 files batched, 501 (6513) added so far); re-opening (prior size: 32170.4 KB)
+0008.058 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6600 files added (on-disk size: 34527.3 KB)
+0008.060 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6700 files added (on-disk size: 34527.3 KB)
+0008.062 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6800 files added (on-disk size: 34527.3 KB)
+0008.063 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 6900 files added (on-disk size: 34527.3 KB)
+0008.065 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7000 files added (on-disk size: 34527.3 KB)
+0008.066 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (18.1 MB, 7849 files batched, 501 (7014) added so far); re-opening (prior size: 34527.3 KB)
+0009.179 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7100 files added (on-disk size: 39715 KB)
+0009.181 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7200 files added (on-disk size: 39715 KB)
+0009.183 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7300 files added (on-disk size: 39715 KB)
+0009.185 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7400 files added (on-disk size: 39715 KB)
+0009.186 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7500 files added (on-disk size: 39715 KB)
+0009.187 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.2 MB, 7849 files batched, 501 (7515) added so far); re-opening (prior size: 39715 KB)
+0009.592 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7600 files added (on-disk size: 40518.3 KB)
+0009.594 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7700 files added (on-disk size: 40518.3 KB)
+0009.596 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip.tmp: 7800 files added (on-disk size: 40518.3 KB)
+0010.442 (0) Created plugins zip (0) - 41377.3 KB in 10.3 s (4013 KB/s) (sha1: 65ef54642425093bc3578a49f889b76728c671c9, sha256: d9388fbdc6f47087fb85f6c7197e1cbfc0d2210461dac2e28523e2f43cb8f17d)
+0010.444 (0) Beginning creation of dump of themes (split every: 400 MB)
+0010.511 (0) Total entities for the zip file: 299 directories, 1185 files (0 skipped as non-modified), 20 MB
+0010.513 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.515 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.517 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0010.518 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0010.520 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0010.521 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.6 MB, 1185 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0011.099 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: size is now: 4.60 MB
+0011.102 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 600 files added (on-disk size: 4662.7 KB)
+0011.104 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 700 files added (on-disk size: 4662.7 KB)
+0011.106 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 800 files added (on-disk size: 4662.7 KB)
+0011.108 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 900 files added (on-disk size: 4662.7 KB)
+0011.110 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 1000 files added (on-disk size: 4662.7 KB)
+0011.110 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.6 MB, 1185 files batched, 501 (1002) added so far); re-opening (prior size: 4662.7 KB)
+0011.668 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: size is now: 7.90 MB
+0011.671 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: 1100 files added (on-disk size: 8063 KB)
+0011.854 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip.tmp: size is now: 9.80 MB
+0011.974 (0) Created themes zip (0) - 10050.6 KB in 1.5 s (6754.9 KB/s) (sha1: 6363011e0b7cffd7f26f5ffd6cdbed4ab5424f68, sha256: b68c321c252ce5b28ab62c4a38d5a9ba1cf0ada7cfd6e9309720060ccec06a2c)
+0011.975 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0011.975 (0) Looking for candidates to backup in: /home/antir/public_html/wp-content/uploads
+0011.976 (0) finding files: 2018: adding to list (1)
+0011.976 (0) finding files: ultimatemember: adding to list (2)
+0011.977 (0) finding files: revslider: adding to list (3)
+0011.977 (0) finding files: js_composer: adding to list (4)
+0011.977 (0) finding files: 2016: adding to list (5)
+0011.978 (0) finding files: formidable: adding to list (6)
+0011.978 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0012.036 (0) Total entities for the zip file: 200 directories, 1133 files (0 skipped as non-modified), 70.5 MB
+0012.038 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0012.040 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25 MB, 1133 files batched, 200 (200) added so far); re-opening (prior size: 0 KB)
+0012.319 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: size is now: 25.10 MB
+0012.321 (0) A useful amount of data was added after this amount of zip processing: 0.4 s (normalised: 0.4 s, rate: 63460 KB/s)
+0012.322 (0) Performance is good - will increase the amount of data we attempt to batch (time=0.40352392196655, normalised_time=0.40340384444434, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=209715200)
+0012.323 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 200 files added (on-disk size: 25692.3 KB)
+0012.325 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 300 files added (on-disk size: 25692.3 KB)
+0012.326 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 400 files added (on-disk size: 25692.3 KB)
+0012.328 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 500 files added (on-disk size: 25692.3 KB)
+0012.330 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 600 files added (on-disk size: 25692.3 KB)
+0012.332 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 700 files added (on-disk size: 25692.3 KB)
+0012.332 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (27.7 MB, 1133 files batched, 501 (701) added so far); re-opening (prior size: 25692.3 KB)
+0012.813 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: size is now: 52.90 MB
+0012.816 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 800 files added (on-disk size: 54209.9 KB)
+0012.818 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 900 files added (on-disk size: 54209.9 KB)
+0012.820 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 1000 files added (on-disk size: 54209.9 KB)
+0012.822 (0) Zip: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: 1100 files added (on-disk size: 54209.9 KB)
+0013.754 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip.tmp: size is now: 70.80 MB
+0014.592 (0) Created uploads zip (0) - 72459.4 KB in 2.6 s (28166 KB/s) (sha1: 049854d88c4dd23b05b5a1e1fa19196dc19cb00b, sha256: 87206c2ddc4730d1402a54d031d8e5a5705b0931e547ea303d78f34166a30b5b)
+0014.594 (0) Beginning backup of other directories found in the content directory (index: 0)
+0014.594 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0014.594 (0) Looking for candidates to backup in: /home/antir/public_html/wp-content
+0014.595 (0) finding files: index.php: adding to list (1)
+0014.595 (0) finding files: plugins: skipping: this is the plugins directory
+0014.596 (0) finding files: themes: skipping: this is the themes directory
+0014.596 (0) finding files: uploads: skipping: this is the uploads directory
+0014.596 (0) finding files: upgrade: skipping: excluded by options
+0014.597 (0) finding files: languages: adding to list (2)
+0014.597 (0) finding files: aiowps_backups: skipping: excluded by options (glob)
+0014.597 (0) finding files: debug.log: skipping: excluded by options
+0014.598 (0) finding files: updraft: skipping: this is the updraft directory
+0014.645 (0) Total entities for the zip file: 2 directories, 1 files (0 skipped as non-modified), 0 MB
+0014.654 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-others.zip.tmp: size is now: 0.00 MB
+0014.657 (0) Created others zip (0) - 0.5 KB in 0 s (36.9 KB/s) (sha1: 0b65df7bffdd99c89904f4756f01a337be3257e4, sha256: 030de7704cea8d4d5a82c69bb9c729d4a3ffd83937274838a3ce764cef790bba)
+0014.659 (0) Saving backup status to database (elements: 8)
+0014.661 (0) Beginning creation of database dump (WordPress DB)
+0014.662 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0014.687 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_r5261options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */ (truncated - 1231 bytes total)
+0014.688 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0014.731 (0) Table wp_r5261options: Total expected rows (approximate): 989
+0014.833 (0) Table wp_r5261options: Total rows added: 985 in 0.10 seconds
+0014.834 (0) Table wp_r5261options: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261options.table.gz - 438.6 KB)
+0014.836 (0) Table wp_r5261users: Total expected rows (approximate): 68
+0014.838 (0) Table wp_r5261users: Total rows added: 68 in 0.00 seconds
+0014.839 (0) Table wp_r5261users: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261users.table.gz - 7.6 KB)
+0014.841 (0) Table wp_r5261usermeta: Total expected rows (approximate): 2163
+0014.855 (0) Table wp_r5261usermeta: Total rows added: 2163 in 0.01 seconds
+0014.856 (0) Table wp_r5261usermeta: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261usermeta.table.gz - 34.6 KB)
+0014.859 (0) Table wp_r5261commentmeta: Total expected rows (approximate): 0
+0014.860 (0) Table wp_r5261commentmeta: Total rows added: 0 in 0.00 seconds
+0014.860 (0) Table wp_r5261commentmeta: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261commentmeta.table.gz - 0.4 KB)
+0014.862 (0) Table wp_r5261comments: Total expected rows (approximate): 0
+0014.863 (0) Table wp_r5261comments: Total rows added: 0 in 0.00 seconds
+0014.864 (0) Table wp_r5261comments: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261comments.table.gz - 0.5 KB)
+0014.866 (0) Table wp_r5261links: Total expected rows (approximate): 0
+0014.867 (0) Table wp_r5261links: Total rows added: 0 in 0.00 seconds
+0014.868 (0) Table wp_r5261links: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261links.table.gz - 0.4 KB)
+0014.869 (0) Table wp_r5261postmeta: Total expected rows (approximate): 148425
+0015.254 (0) Table wp_r5261postmeta: binary mysqldump finished (writes: 40) in 0.38 seconds
+0015.255 (0) Table wp_r5261postmeta: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261postmeta.table.gz - 1293 KB)
+0015.258 (0) Table wp_r5261posts: Total expected rows (approximate): 6253
+0016.166 (0) Table wp_r5261posts: Total rows added: 6253 in 0.91 seconds
+0016.167 (0) Table wp_r5261posts: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261posts.table.gz - 4241.8 KB)
+0016.169 (0) Table wp_r5261term_relationships: Total expected rows (approximate): 3776
+0016.182 (0) Table wp_r5261term_relationships: Total rows added: 3776 in 0.01 seconds
+0016.183 (0) Table wp_r5261term_relationships: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261term_relationships.table.gz - 13.4 KB)
+0016.185 (0) Table wp_r5261term_taxonomy: Total expected rows (approximate): 150
+0016.187 (0) Table wp_r5261term_taxonomy: Total rows added: 150 in 0.00 seconds
+0016.188 (0) Table wp_r5261term_taxonomy: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261term_taxonomy.table.gz - 4.2 KB)
+0016.189 (0) Table wp_r5261termmeta: Total expected rows (approximate): 73
+0016.191 (0) Table wp_r5261termmeta: Total rows added: 73 in 0.00 seconds
+0016.191 (0) Table wp_r5261termmeta: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261termmeta.table.gz - 1.1 KB)
+0016.193 (0) Table wp_r5261terms: Total expected rows (approximate): 150
+0016.195 (0) Table wp_r5261terms: Total rows added: 150 in 0.00 seconds
+0016.196 (0) Table wp_r5261terms: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261terms.table.gz - 2.5 KB)
+0016.197 (0) Table wp_r5261aiowps_events: Total expected rows (approximate): 0
+0016.198 (0) Table wp_r5261aiowps_events: Total rows added: 0 in 0.00 seconds
+0016.199 (0) Table wp_r5261aiowps_events: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_events.table.gz - 0.4 KB)
+0016.201 (0) Table wp_r5261aiowps_failed_logins: Total expected rows (approximate): 1759
+0016.213 (0) Table wp_r5261aiowps_failed_logins: Total rows added: 1759 in 0.01 seconds
+0016.214 (0) Table wp_r5261aiowps_failed_logins: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_failed_logins.table.gz - 17.3 KB)
+0016.216 (0) Table wp_r5261aiowps_global_meta: Total expected rows (approximate): 1
+0016.331 (0) Table wp_r5261aiowps_global_meta: Total rows added: 1 in 0.11 seconds
+0016.333 (0) Table wp_r5261aiowps_global_meta: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_global_meta.table.gz - 413.9 KB)
+0016.335 (0) Table wp_r5261aiowps_login_activity: Total expected rows (approximate): 215
+0016.338 (0) Table wp_r5261aiowps_login_activity: Total rows added: 215 in 0.00 seconds
+0016.338 (0) Table wp_r5261aiowps_login_activity: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_login_activity.table.gz - 4.2 KB)
+0016.340 (0) Table wp_r5261aiowps_login_lockdown: Total expected rows (approximate): 301
+0016.343 (0) Table wp_r5261aiowps_login_lockdown: Total rows added: 301 in 0.00 seconds
+0016.344 (0) Table wp_r5261aiowps_login_lockdown: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_login_lockdown.table.gz - 5.9 KB)
+0016.346 (0) Table wp_r5261aiowps_permanent_block: Total expected rows (approximate): 0
+0016.347 (0) Table wp_r5261aiowps_permanent_block: Total rows added: 0 in 0.00 seconds
+0016.347 (0) Table wp_r5261aiowps_permanent_block: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_permanent_block.table.gz - 0.4 KB)
+0016.349 (0) Table wp_r5261crumsubscribe: Total expected rows (approximate): 0
+0016.350 (0) Table wp_r5261crumsubscribe: Total rows added: 0 in 0.00 seconds
+0016.351 (0) Table wp_r5261crumsubscribe: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261crumsubscribe.table.gz - 0.3 KB)
+0016.352 (0) Table wp_r5261easytimetable_planning: Total expected rows (approximate): 0
+0016.354 (0) Table wp_r5261easytimetable_planning: Total rows added: 0 in 0.00 seconds
+0016.354 (0) Table wp_r5261easytimetable_planning: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261easytimetable_planning.table.gz - 0.5 KB)
+0016.356 (0) Table wp_r5261em_bookings: Total expected rows (approximate): 0
+0016.357 (0) Table wp_r5261em_bookings: Total rows added: 0 in 0.00 seconds
+0016.358 (0) Table wp_r5261em_bookings: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_bookings.table.gz - 0.5 KB)
+0016.360 (0) Table wp_r5261em_bookings_relationships: Total expected rows (approximate): 0
+0016.361 (0) Table wp_r5261em_bookings_relationships: Total rows added: 0 in 0.00 seconds
+0016.361 (0) Table wp_r5261em_bookings_relationships: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_bookings_relationships.table.gz - 0.4 KB)
+0016.363 (0) Table wp_r5261em_coupons: Total expected rows (approximate): 0
+0016.364 (0) Table wp_r5261em_coupons: Total rows added: 0 in 0.00 seconds
+0016.365 (0) Table wp_r5261em_coupons: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_coupons.table.gz - 0.5 KB)
+0016.366 (0) Table wp_r5261em_email_queue: Total expected rows (approximate): 0
+0016.367 (0) Table wp_r5261em_email_queue: Total rows added: 0 in 0.00 seconds
+0016.368 (0) Table wp_r5261em_email_queue: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_email_queue.table.gz - 0.4 KB)
+0016.370 (0) Table wp_r5261em_events: Total expected rows (approximate): 4008
+0017.203 (0) Table wp_r5261em_events: Total rows added: 4008 in 0.83 seconds
+0017.205 (0) Table wp_r5261em_events: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_events.table.gz - 4073.4 KB)
+0017.207 (0) Table wp_r5261em_locations: Total expected rows (approximate): 1152
+0017.228 (0) Table wp_r5261em_locations: Total rows added: 1152 in 0.02 seconds
+0017.229 (0) Table wp_r5261em_locations: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_locations.table.gz - 58.6 KB)
+0017.231 (0) Table wp_r5261em_locations_bak: Total expected rows (approximate): 5
+0017.233 (0) Table wp_r5261em_locations_bak: Total rows added: 5 in 0.00 seconds
+0017.234 (0) Table wp_r5261em_locations_bak: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_locations_bak.table.gz - 1.2 KB)
+0017.235 (0) Table wp_r5261em_locations_test: Total expected rows (approximate): 1189
+0017.269 (0) Table wp_r5261em_locations_test: Total rows added: 1189 in 0.03 seconds
+0017.270 (0) Table wp_r5261em_locations_test: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_locations_test.table.gz - 112.5 KB)
+0017.272 (0) Table wp_r5261em_meta: Total expected rows (approximate): 251
+0017.274 (0) Table wp_r5261em_meta: Total rows added: 251 in 0.00 seconds
+0017.275 (0) Table wp_r5261em_meta: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_meta.table.gz - 4.2 KB)
+0017.277 (0) Table wp_r5261em_tickets: Total expected rows (approximate): 1
+0017.279 (0) Table wp_r5261em_tickets: Total rows added: 1 in 0.00 seconds
+0017.280 (0) Table wp_r5261em_tickets: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_tickets.table.gz - 0.5 KB)
+0017.281 (0) Table wp_r5261em_tickets_bookings: Total expected rows (approximate): 0
+0017.282 (0) Table wp_r5261em_tickets_bookings: Total rows added: 0 in 0.00 seconds
+0017.283 (0) Table wp_r5261em_tickets_bookings: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_tickets_bookings.table.gz - 0.4 KB)
+0017.285 (0) Table wp_r5261em_transactions: Total expected rows (approximate): 0
+0017.286 (0) Table wp_r5261em_transactions: Total rows added: 0 in 0.00 seconds
+0017.286 (0) Table wp_r5261em_transactions: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_transactions.table.gz - 0.5 KB)
+0017.288 (0) Table wp_r5261frm_fields: Total expected rows (approximate): 139
+0017.295 (0) Table wp_r5261frm_fields: Total rows added: 139 in 0.01 seconds
+0017.296 (0) Table wp_r5261frm_fields: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_fields.table.gz - 16.7 KB)
+0017.297 (0) Table wp_r5261frm_forms: Total expected rows (approximate): 10
+0017.299 (0) Table wp_r5261frm_forms: Total rows added: 10 in 0.00 seconds
+0017.300 (0) Table wp_r5261frm_forms: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_forms.table.gz - 2.8 KB)
+0017.301 (0) Table wp_r5261frm_item_metas: Total expected rows (approximate): 2432
+0017.322 (0) Table wp_r5261frm_item_metas: Total rows added: 2432 in 0.02 seconds
+0017.323 (0) Table wp_r5261frm_item_metas: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_item_metas.table.gz - 45.1 KB)
+0017.325 (0) Table wp_r5261frm_items: Total expected rows (approximate): 1212
+0017.341 (0) Table wp_r5261frm_items: Total rows added: 1212 in 0.02 seconds
+0017.342 (0) Table wp_r5261frm_items: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_items.table.gz - 15.7 KB)
+0017.344 (0) Table wp_r5261revslider_css: Total expected rows (approximate): 109
+0017.347 (0) Table wp_r5261revslider_css: Total rows added: 109 in 0.00 seconds
+0017.347 (0) Table wp_r5261revslider_css: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_css.table.gz - 4.9 KB)
+0017.349 (0) Table wp_r5261revslider_layer_animations: Total expected rows (approximate): 0
+0017.350 (0) Table wp_r5261revslider_layer_animations: Total rows added: 0 in 0.00 seconds
+0017.351 (0) Table wp_r5261revslider_layer_animations: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_layer_animations.table.gz - 0.3 KB)
+0017.352 (0) Table wp_r5261revslider_navigations: Total expected rows (approximate): 0
+0017.354 (0) Table wp_r5261revslider_navigations: Total rows added: 0 in 0.00 seconds
+0017.354 (0) Table wp_r5261revslider_navigations: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_navigations.table.gz - 0.3 KB)
+0017.356 (0) Table wp_r5261revslider_sliders: Total expected rows (approximate): 1
+0017.357 (0) Table wp_r5261revslider_sliders: Total rows added: 1 in 0.00 seconds
+0017.358 (0) Table wp_r5261revslider_sliders: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_sliders.table.gz - 3.1 KB)
+0017.360 (0) Table wp_r5261revslider_slides: Total expected rows (approximate): 5
+0017.362 (0) Table wp_r5261revslider_slides: Total rows added: 5 in 0.00 seconds
+0017.363 (0) Table wp_r5261revslider_slides: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_slides.table.gz - 5.1 KB)
+0017.364 (0) Table wp_r5261revslider_static_slides: Total expected rows (approximate): 1
+0017.366 (0) Table wp_r5261revslider_static_slides: Total rows added: 1 in 0.00 seconds
+0017.366 (0) Table wp_r5261revslider_static_slides: finishing file (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_static_slides.table.gz - 0.4 KB)
+0017.368 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261options.table.gz (1/42): adding to final database dump
+0017.459 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261users.table.gz (2/42): adding to final database dump
+0017.461 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261usermeta.table.gz (3/42): adding to final database dump
+0017.469 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261commentmeta.table.gz (4/42): adding to final database dump
+0017.470 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261comments.table.gz (5/42): adding to final database dump
+0017.471 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261links.table.gz (6/42): adding to final database dump
+0017.471 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261postmeta.table.gz (7/42): adding to final database dump
+0017.781 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261posts.table.gz (8/42): adding to final database dump
+0018.604 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261term_relationships.table.gz (9/42): adding to final database dump
+0018.610 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261term_taxonomy.table.gz (10/42): adding to final database dump
+0018.611 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261termmeta.table.gz (11/42): adding to final database dump
+0018.612 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261terms.table.gz (12/42): adding to final database dump
+0018.613 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_events.table.gz (13/42): adding to final database dump
+0018.614 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_failed_logins.table.gz (14/42): adding to final database dump
+0018.619 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_global_meta.table.gz (15/42): adding to final database dump
+0018.716 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_login_activity.table.gz (16/42): adding to final database dump
+0018.718 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_login_lockdown.table.gz (17/42): adding to final database dump
+0018.720 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261aiowps_permanent_block.table.gz (18/42): adding to final database dump
+0018.721 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261crumsubscribe.table.gz (19/42): adding to final database dump
+0018.721 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261easytimetable_planning.table.gz (20/42): adding to final database dump
+0018.721 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_bookings.table.gz (21/42): adding to final database dump
+0018.722 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_bookings_relationships.table.gz (22/42): adding to final database dump
+0018.722 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_coupons.table.gz (23/42): adding to final database dump
+0018.723 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_email_queue.table.gz (24/42): adding to final database dump
+0018.723 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_events.table.gz (25/42): adding to final database dump
+0019.497 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_locations.table.gz (26/42): adding to final database dump
+0019.509 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_locations_bak.table.gz (27/42): adding to final database dump
+0019.510 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_locations_test.table.gz (28/42): adding to final database dump
+0019.531 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_meta.table.gz (29/42): adding to final database dump
+0019.533 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_tickets.table.gz (30/42): adding to final database dump
+0019.534 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_tickets_bookings.table.gz (31/42): adding to final database dump
+0019.534 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261em_transactions.table.gz (32/42): adding to final database dump
+0019.535 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_fields.table.gz (33/42): adding to final database dump
+0019.539 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_forms.table.gz (34/42): adding to final database dump
+0019.540 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_item_metas.table.gz (35/42): adding to final database dump
+0019.551 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261frm_items.table.gz (36/42): adding to final database dump
+0019.558 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_css.table.gz (37/42): adding to final database dump
+0019.560 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_layer_animations.table.gz (38/42): adding to final database dump
+0019.561 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_navigations.table.gz (39/42): adding to final database dump
+0019.561 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_sliders.table.gz (40/42): adding to final database dump
+0019.562 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_slides.table.gz (41/42): adding to final database dump
+0019.564 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db-table-wp_r5261revslider_static_slides.table.gz (42/42): adding to final database dump
+0019.564 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz: finished writing out complete database file (10800 KB)
+0019.698 (0) Total database tables backed up: 42 (backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz, size: 11081413, sha256)
+0019.702 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0019.702 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0019.703 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0019.703 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-others.zip: others: This file has not yet been successfully uploaded: will queue
+0019.703 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz: db: This file has not yet been successfully uploaded: will queue
+0019.704 (0) Saving backup history. Total backup size: 131.6 MB
+0019.705 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0019.707 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0019.707 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-c5315db16691d3ca0923b708dab05918)
+0022.958 (0) Google Drive quota usage: used=391.5 MB, total=30720 MB, available=30328.5 MB
+0022.958 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip: Attempting to upload to Google Drive (into folder id: 1VYMYjEdcAlvospt-EAbYyPOAspHLc_2X)
+0023.434 (0) Googledrive chunked upload: 2.5 % uploaded (1048576)
+0023.843 (0) Googledrive chunked upload: 4.9 % uploaded (2097152)
+0024.265 (0) Googledrive chunked upload: 7.4 % uploaded (3145728)
+0024.643 (0) Googledrive chunked upload: 9.9 % uploaded (4194304)
+0024.821 (0) Googledrive chunked upload: 12.4 % uploaded (5242880)
+0025.197 (0) Googledrive chunked upload: 14.8 % uploaded (6291456)
+0025.581 (0) Googledrive chunked upload: 17.3 % uploaded (7340032)
+0025.746 (0) Googledrive chunked upload: 19.8 % uploaded (8388608)
+0026.157 (0) Googledrive chunked upload: 22.3 % uploaded (9437184)
+0026.578 (0) Googledrive chunked upload: 24.7 % uploaded (10485760)
+0026.759 (0) Googledrive chunked upload: 27.2 % uploaded (11534336)
+0027.168 (0) Googledrive chunked upload: 29.7 % uploaded (12582912)
+0027.561 (0) Googledrive chunked upload: 32.2 % uploaded (13631488)
+0027.726 (0) Googledrive chunked upload: 34.6 % uploaded (14680064)
+0028.125 (0) Googledrive chunked upload: 37.1 % uploaded (15728640)
+0028.487 (0) Googledrive chunked upload: 39.6 % uploaded (16777216)
+0028.880 (0) Googledrive chunked upload: 42.1 % uploaded (17825792)
+0029.036 (0) Googledrive chunked upload: 44.5 % uploaded (18874368)
+0029.205 (0) Googledrive chunked upload: 47 % uploaded (19922944)
+0029.369 (0) Googledrive chunked upload: 49.5 % uploaded (20971520)
+0029.757 (0) Googledrive chunked upload: 52 % uploaded (22020096)
+0029.940 (0) Googledrive chunked upload: 54.4 % uploaded (23068672)
+0030.091 (0) Googledrive chunked upload: 56.9 % uploaded (24117248)
+0030.503 (0) Googledrive chunked upload: 59.4 % uploaded (25165824)
+0030.926 (0) Googledrive chunked upload: 61.9 % uploaded (26214400)
+0031.344 (0) Googledrive chunked upload: 64.3 % uploaded (27262976)
+0031.511 (0) Googledrive chunked upload: 66.8 % uploaded (28311552)
+0031.898 (0) Googledrive chunked upload: 69.3 % uploaded (29360128)
+0032.293 (0) Googledrive chunked upload: 71.8 % uploaded (30408704)
+0032.473 (0) Googledrive chunked upload: 74.2 % uploaded (31457280)
+0032.667 (0) Googledrive chunked upload: 76.7 % uploaded (32505856)
+0032.831 (0) Googledrive chunked upload: 79.2 % uploaded (33554432)
+0032.993 (0) Googledrive chunked upload: 81.7 % uploaded (34603008)
+0033.389 (0) Googledrive chunked upload: 84.1 % uploaded (35651584)
+0033.563 (0) Googledrive chunked upload: 86.6 % uploaded (36700160)
+0033.955 (0) Googledrive chunked upload: 89.1 % uploaded (37748736)
+0034.381 (0) Googledrive chunked upload: 91.6 % uploaded (38797312)
+0034.632 (0) Googledrive chunked upload: 94 % uploaded (39845888)
+0034.869 (0) Googledrive chunked upload: 96.5 % uploaded (40894464)
+0035.109 (0) Googledrive chunked upload: 99 % uploaded (41943040)
+0037.329 (0) Googledrive chunked upload: 100 % uploaded (41943040)
+0037.330 (0) OK: Archive backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip uploaded to Google Drive in 14.37 seconds
+0037.331 (0) Recording as successfully uploaded: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip
+0037.339 (0) Deleting local file: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-plugins.zip: OK
+0037.559 (0) Google Drive quota usage: used=431.9 MB, total=30720 MB, available=30288.1 MB
+0037.560 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip: Attempting to upload to Google Drive (into folder id: 1VYMYjEdcAlvospt-EAbYyPOAspHLc_2X)
+0038.026 (0) Googledrive chunked upload: 10.2 % uploaded (1048576)
+0038.227 (0) Googledrive chunked upload: 20.4 % uploaded (2097152)
+0038.410 (0) Googledrive chunked upload: 30.6 % uploaded (3145728)
+0038.581 (0) Googledrive chunked upload: 40.8 % uploaded (4194304)
+0038.744 (0) Googledrive chunked upload: 50.9 % uploaded (5242880)
+0038.911 (0) Googledrive chunked upload: 61.1 % uploaded (6291456)
+0039.093 (0) Googledrive chunked upload: 71.3 % uploaded (7340032)
+0039.265 (0) Googledrive chunked upload: 81.5 % uploaded (8388608)
+0039.430 (0) Googledrive chunked upload: 91.7 % uploaded (9437184)
+0040.352 (0) Googledrive chunked upload: 100 % uploaded (9437184)
+0040.353 (0) OK: Archive backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip uploaded to Google Drive in 2.79 seconds
+0040.354 (0) Recording as successfully uploaded: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip
+0040.357 (0) Deleting local file: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-themes.zip: OK
+0041.081 (0) Google Drive quota usage: used=441.7 MB, total=30720 MB, available=30278.3 MB
+0041.082 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip: Attempting to upload to Google Drive (into folder id: 1VYMYjEdcAlvospt-EAbYyPOAspHLc_2X)
+0041.564 (0) Googledrive chunked upload: 1.4 % uploaded (1048576)
+0041.726 (0) Googledrive chunked upload: 2.8 % uploaded (2097152)
+0042.119 (0) Googledrive chunked upload: 4.2 % uploaded (3145728)
+0042.288 (0) Googledrive chunked upload: 5.7 % uploaded (4194304)
+0042.460 (0) Googledrive chunked upload: 7.1 % uploaded (5242880)
+0042.677 (0) Googledrive chunked upload: 8.5 % uploaded (6291456)
+0043.111 (0) Googledrive chunked upload: 9.9 % uploaded (7340032)
+0043.291 (0) Googledrive chunked upload: 11.3 % uploaded (8388608)
+0043.469 (0) Googledrive chunked upload: 12.7 % uploaded (9437184)
+0043.857 (0) Googledrive chunked upload: 14.1 % uploaded (10485760)
+0044.021 (0) Googledrive chunked upload: 15.5 % uploaded (11534336)
+0044.223 (0) Googledrive chunked upload: 17 % uploaded (12582912)
+0044.392 (0) Googledrive chunked upload: 18.4 % uploaded (13631488)
+0044.594 (0) Googledrive chunked upload: 19.8 % uploaded (14680064)
+0044.968 (0) Googledrive chunked upload: 21.2 % uploaded (15728640)
+0045.143 (0) Googledrive chunked upload: 22.6 % uploaded (16777216)
+0045.298 (0) Googledrive chunked upload: 24 % uploaded (17825792)
+0045.570 (0) Googledrive chunked upload: 25.4 % uploaded (18874368)
+0045.977 (0) Googledrive chunked upload: 26.9 % uploaded (19922944)
+0046.138 (0) Googledrive chunked upload: 28.3 % uploaded (20971520)
+0046.305 (0) Googledrive chunked upload: 29.7 % uploaded (22020096)
+0046.514 (0) Googledrive chunked upload: 31.1 % uploaded (23068672)
+0046.670 (0) Googledrive chunked upload: 32.5 % uploaded (24117248)
+0046.841 (0) Googledrive chunked upload: 33.9 % uploaded (25165824)
+0047.012 (0) Googledrive chunked upload: 35.3 % uploaded (26214400)
+0047.187 (0) Googledrive chunked upload: 36.7 % uploaded (27262976)
+0047.353 (0) Googledrive chunked upload: 38.2 % uploaded (28311552)
+0047.537 (0) Googledrive chunked upload: 39.6 % uploaded (29360128)
+0047.700 (0) Googledrive chunked upload: 41 % uploaded (30408704)
+0047.870 (0) Googledrive chunked upload: 42.4 % uploaded (31457280)
+0048.253 (0) Googledrive chunked upload: 43.8 % uploaded (32505856)
+0048.443 (0) Googledrive chunked upload: 45.2 % uploaded (33554432)
+0048.601 (0) Googledrive chunked upload: 46.6 % uploaded (34603008)
+0048.784 (0) Googledrive chunked upload: 48 % uploaded (35651584)
+0049.196 (0) Googledrive chunked upload: 49.5 % uploaded (36700160)
+0049.363 (0) Googledrive chunked upload: 50.9 % uploaded (37748736)
+0049.513 (0) Googledrive chunked upload: 52.3 % uploaded (38797312)
+0049.684 (0) Googledrive chunked upload: 53.7 % uploaded (39845888)
+0049.869 (0) Googledrive chunked upload: 55.1 % uploaded (40894464)
+0050.049 (0) Googledrive chunked upload: 56.5 % uploaded (41943040)
+0050.245 (0) Googledrive chunked upload: 57.9 % uploaded (42991616)
+0050.413 (0) Googledrive chunked upload: 59.4 % uploaded (44040192)
+0050.815 (0) Googledrive chunked upload: 60.8 % uploaded (45088768)
+0050.985 (0) Googledrive chunked upload: 62.2 % uploaded (46137344)
+0051.178 (0) Googledrive chunked upload: 63.6 % uploaded (47185920)
+0051.339 (0) Googledrive chunked upload: 65 % uploaded (48234496)
+0051.748 (0) Googledrive chunked upload: 66.4 % uploaded (49283072)
+0051.932 (0) Googledrive chunked upload: 67.8 % uploaded (50331648)
+0052.143 (0) Googledrive chunked upload: 69.2 % uploaded (51380224)
+0052.337 (0) Googledrive chunked upload: 70.7 % uploaded (52428800)
+0052.510 (0) Googledrive chunked upload: 72.1 % uploaded (53477376)
+0052.688 (0) Googledrive chunked upload: 73.5 % uploaded (54525952)
+0052.864 (0) Googledrive chunked upload: 74.9 % uploaded (55574528)
+0053.029 (0) Googledrive chunked upload: 76.3 % uploaded (56623104)
+0053.477 (0) Googledrive chunked upload: 77.7 % uploaded (57671680)
+0053.667 (0) Googledrive chunked upload: 79.1 % uploaded (58720256)
+0053.867 (0) Googledrive chunked upload: 80.6 % uploaded (59768832)
+0054.033 (0) Googledrive chunked upload: 82 % uploaded (60817408)
+0054.212 (0) Googledrive chunked upload: 83.4 % uploaded (61865984)
+0054.383 (0) Googledrive chunked upload: 84.8 % uploaded (62914560)
+0054.578 (0) Googledrive chunked upload: 86.2 % uploaded (63963136)
+0054.750 (0) Googledrive chunked upload: 87.6 % uploaded (65011712)
+0054.918 (0) Googledrive chunked upload: 89 % uploaded (66060288)
+0055.128 (0) Googledrive chunked upload: 90.4 % uploaded (67108864)
+0055.301 (0) Googledrive chunked upload: 91.9 % uploaded (68157440)
+0055.489 (0) Googledrive chunked upload: 93.3 % uploaded (69206016)
+0055.679 (0) Googledrive chunked upload: 94.7 % uploaded (70254592)
+0055.864 (0) Googledrive chunked upload: 96.1 % uploaded (71303168)
+0056.045 (0) Googledrive chunked upload: 97.5 % uploaded (72351744)
+0056.211 (0) Googledrive chunked upload: 98.9 % uploaded (73400320)
+0057.162 (0) Googledrive chunked upload: 100 % uploaded (73400320)
+0057.164 (0) OK: Archive backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip uploaded to Google Drive in 16.08 seconds
+0057.164 (0) Recording as successfully uploaded: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip
+0057.177 (0) Deleting local file: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-uploads.zip: OK
+0057.468 (0) Google Drive quota usage: used=512.5 MB, total=30720 MB, available=30207.5 MB
+0057.468 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-others.zip: Attempting to upload to Google Drive (into folder id: 1VYMYjEdcAlvospt-EAbYyPOAspHLc_2X)
+0058.668 (0) Googledrive chunked upload: 100 % uploaded
+0058.670 (0) OK: Archive backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-others.zip uploaded to Google Drive in 1.2 seconds
+0058.670 (0) Recording as successfully uploaded: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-others.zip
+0058.671 (0) Deleting local file: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-others.zip: OK
+0058.920 (0) Google Drive quota usage: used=512.5 MB, total=30720 MB, available=30207.5 MB
+0058.920 (0) backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz: Attempting to upload to Google Drive (into folder id: 1VYMYjEdcAlvospt-EAbYyPOAspHLc_2X)
+0059.467 (0) Googledrive chunked upload: 9.5 % uploaded (1048576)
+0059.652 (0) Googledrive chunked upload: 18.9 % uploaded (2097152)
+0060.056 (0) Googledrive chunked upload: 28.4 % uploaded (3145728)
+0060.253 (0) Googledrive chunked upload: 37.8 % uploaded (4194304)
+0060.411 (0) Googledrive chunked upload: 47.3 % uploaded (5242880)
+0060.595 (0) Googledrive chunked upload: 56.8 % uploaded (6291456)
+0060.989 (0) Googledrive chunked upload: 66.2 % uploaded (7340032)
+0061.157 (0) Googledrive chunked upload: 75.7 % uploaded (8388608)
+0061.374 (0) Googledrive chunked upload: 85.2 % uploaded (9437184)
+0061.544 (0) Googledrive chunked upload: 94.6 % uploaded (10485760)
+0062.675 (0) Googledrive chunked upload: 100 % uploaded (10485760)
+0062.677 (0) OK: Archive backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz uploaded to Google Drive in 3.76 seconds
+0062.677 (0) Recording as successfully uploaded: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz
+0062.681 (0) Deleting local file: backup_2018-12-24-1651_Kingdom_of_An_Tir_7febfc3947c0-db.gz: OK
+0062.682 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=3, retain_db=3
+0062.683 (0) Number of backup sets in history: 4; groups (db): 1
+0062.683 (0) Examining (for databases) backup set with group_id=0, nonce=7febfc3947c0, datestamp=1545699070 (Dec 25 2018 00:51:10)
+0062.683 (0) This backup set is the backup set just made, so will not be deleted.
+0062.683 (0) Examining (for databases) backup set with group_id=0, nonce=5d09ae2368f7, datestamp=1545470164 (Dec 22 2018 09:16:04)
+0062.683 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0062.684 (0) Examining (for databases) backup set with group_id=0, nonce=91475cf8f513, datestamp=1544240854 (Dec 08 2018 03:47:34)
+0062.684 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0062.684 (0) Examining (for databases) backup set with group_id=0, nonce=210d1a3330a6, datestamp=1542094306 (Nov 13 2018 07:31:46)
+0062.684 (0) 1542094306: db: this set includes a database (backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-db.gz); db count is now 3
+0062.684 (0) 1542094306: db: over retain limit (3); will delete this database
+0062.684 (0) Delete file: backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-db.gz, service=googledrive
+0063.540 (0) backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-db.gz: Deletion successful
+0063.542 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0063.542 (0) Number of backup sets in history: 4; groups (files): 1
+0063.542 (0) Examining (for files) backup set with nonce=7febfc3947c0, datestamp=1545699070 (Dec 25 2018 00:51:10)
+0063.542 (0) This backup set is the backup set just made, so will not be deleted.
+0063.543 (0) This backup set is the backup set just made, so will not be deleted.
+0063.543 (0) This backup set is the backup set just made, so will not be deleted.
+0063.543 (0) This backup set is the backup set just made, so will not be deleted.
+0063.543 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0063.543 (0) Examining (for files) backup set with nonce=5d09ae2368f7, datestamp=1545470164 (Dec 22 2018 09:16:04)
+0063.543 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0063.544 (0) Examining (for files) backup set with nonce=91475cf8f513, datestamp=1544240854 (Dec 08 2018 03:47:34)
+0063.544 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0063.544 (0) Examining (for files) backup set with nonce=210d1a3330a6, datestamp=1542094306 (Nov 13 2018 07:31:46)
+0063.544 (0) plugins: over retain limit (3); will delete this file entity
+0063.544 (0) themes: over retain limit (3); will delete this file entity
+0063.544 (0) uploads: over retain limit (3); will delete this file entity
+0063.544 (0) others: over retain limit (3); will delete this file entity
+0063.544 (0) Delete file: backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-plugins.zip, service=googledrive
+0063.544 (0) Delete file: backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-themes.zip, service=googledrive
+0063.545 (0) Delete file: backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-uploads.zip, service=googledrive
+0063.545 (0) Delete file: backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-others.zip, service=googledrive
+0064.317 (0) backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-others.zip: Deletion successful
+0064.755 (0) backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-uploads.zip: Deletion successful
+0065.485 (0) backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-themes.zip: Deletion successful
+0065.983 (0) backup_2018-11-12-2331_Kingdom_of_An_Tir_210d1a3330a6-plugins.zip: Deletion successful
+0065.985 (0) This backup set is now empty; will remove from history
+0065.985 (0) Corresponding log file (log.210d1a3330a6.txt) not found - must have already been deleted
+0065.985 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0065.987 (0) Resume backup (7febfc3947c0, 0): finish run
+0065.988 (0) Decremented the semaphore (fd) by 1
+0065.989 (0) Semaphore (fd) unlocked
+0065.989 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0065.991 (0) Fetching RSS news feed
+0066.166 (0) Fetched RSS news feed; result is a: SimplePie
+0066.178 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: webmi...
+0068.307 (0) The backup apparently succeeded and is now complete

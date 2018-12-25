@@ -534,20 +534,20 @@ class FrmProFormsController {
 
 	public static function advanced_options( $options ) {
         $adv_opts = array(
-            'clickable=1' => __( 'Clickable Links', 'formidable-pro' ),
-            'links=0'   => array( 'label' => __( 'Remove Links', 'formidable-pro' ), 'title' => __( 'Removes the automatic links to category pages', 'formidable-pro' )),
-            'sanitize=1' => array( 'label' => __( 'Sanitize', 'formidable-pro' ), 'title' => __( 'Replaces spaces with dashes and lowercases all. Use if adding an HTML class or ID', 'formidable-pro' )),
-			'sanitize_url=1' => array(
+            'x clickable=1' => __( 'Clickable Links', 'formidable-pro' ),
+            'x links=0'   => array( 'label' => __( 'Remove Links', 'formidable-pro' ), 'title' => __( 'Removes the automatic links to category pages', 'formidable-pro' )),
+            'x sanitize=1' => array( 'label' => __( 'Sanitize', 'formidable-pro' ), 'title' => __( 'Replaces spaces with dashes and lowercases all. Use if adding an HTML class or ID', 'formidable-pro' )),
+			'x sanitize_url=1' => array(
 				'label' => __( 'Sanitize URL', 'formidable-pro' ),
 				'title' => __( 'Replaces all HTML entities with a URL safe string.', 'formidable-pro' ),
 			),
-            'truncate=40' => array( 'label' => __( 'Truncate', 'formidable-pro' ), 'title' => __( 'Truncate text with a link to view more. If using Both (dynamic), the link goes to the detail page. Otherwise, it will show in-place.', 'formidable-pro' )),
-            'truncate=100 more_text="More"' => __( 'More Text', 'formidable-pro' ),
-            'time_ago=1' => array( 'label' => __( 'Time Ago', 'formidable-pro' ), 'title' => __( 'How long ago a date was in minutes, hours, days, months, or years.', 'formidable-pro' )),
-            'decimal=2 dec_point="." thousands_sep=","' => __( '# Format', 'formidable-pro' ),
-            'show="value"' => array( 'label' => __( 'Saved Value', 'formidable-pro' ), 'title' => __( 'Show the saved value for fields with separate values.', 'formidable-pro' ) ),
-            'striphtml=1' => array( 'label' => __( 'Remove HTML', 'formidable-pro' ), 'title' => __( 'Remove all HTML added into your form before display', 'formidable-pro' )),
-            'keepjs=1' => array( 'label' => __( 'Keep JS', 'formidable-pro' ), 'title' => __( 'Javascript from your form entries are automatically removed. Add this option only if you trust those submitting entries.', 'formidable-pro' )),
+            'x truncate=40' => array( 'label' => __( 'Truncate', 'formidable-pro' ), 'title' => __( 'Truncate text with a link to view more. If using Both (dynamic), the link goes to the detail page. Otherwise, it will show in-place.', 'formidable-pro' )),
+            'x truncate=100 more_text="More"' => __( 'More Text', 'formidable-pro' ),
+            'x time_ago=1' => array( 'label' => __( 'Time Ago', 'formidable-pro' ), 'title' => __( 'How long ago a date was in minutes, hours, days, months, or years.', 'formidable-pro' )),
+            'x decimal=2 dec_point="." thousands_sep=","' => __( '# Format', 'formidable-pro' ),
+            'x show="value"' => array( 'label' => __( 'Saved Value', 'formidable-pro' ), 'title' => __( 'Show the saved value for fields with separate values.', 'formidable-pro' ) ),
+            'x striphtml=1' => array( 'label' => __( 'Remove HTML', 'formidable-pro' ), 'title' => __( 'Remove all HTML added into your form before display', 'formidable-pro' )),
+            'x keepjs=1' => array( 'label' => __( 'Keep JS', 'formidable-pro' ), 'title' => __( 'Javascript from your form entries are automatically removed. Add this option only if you trust those submitting entries.', 'formidable-pro' )),
         );
 
         $options = array_merge($options, $adv_opts);

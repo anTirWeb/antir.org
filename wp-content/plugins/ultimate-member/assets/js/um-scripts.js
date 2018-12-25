@@ -155,7 +155,8 @@ jQuery(document).ready(function() {
             type: 'post',
             data: {
 	            action: 'um_remove_file',
-                src: src
+                src: src,
+	            nonce: um_scripts.nonce
             }
         });
 
@@ -175,7 +176,8 @@ jQuery(document).ready(function() {
             type: 'post',
             data: {
 	            action: 'um_remove_file',
-                src: src
+                src: src,
+	            nonce: um_scripts.nonce
             }
         });
 
@@ -183,6 +185,15 @@ jQuery(document).ready(function() {
     });
 
     jQuery('.um-s1,.um-s2').css({'display':'block'});
+
+    if( jQuery(".um-s1").length > 0 ){
+        jQuery(".um-s1").each(function () {
+            var select = jQuery(this);
+            if( select.val() === '' && select.attr('data-default') ) {
+                select.val(select.attr('data-default'));
+            }
+        });
+    }
 
     jQuery(".um-s1").select2({
 
@@ -260,7 +271,8 @@ jQuery(document).ready(function() {
 				data: {
 					action: 'um_ajax_paginate_posts',
 					author: jQuery(this).data('author'),
-					page:   next_page
+					page:   next_page,
+					nonce: um_scripts.nonce
 				},
 				complete: function() {
 					parent.removeClass( 'loading' );
@@ -284,7 +296,8 @@ jQuery(document).ready(function() {
 				data: {
 					action: 'um_ajax_paginate',
 					hook: hook,
-					args: args
+					args: args,
+					nonce: um_scripts.nonce
 				},
 				complete: function() {
 					parent.removeClass( 'loading' );
@@ -315,7 +328,8 @@ jQuery(document).ready(function() {
                 action: 'um_muted_action',
                 hook: hook,
                 user_id: user_id,
-                arguments: arguments
+                arguments: arguments,
+	            nonce: um_scripts.nonce
             },
             success: function(data){
 
@@ -370,7 +384,8 @@ jQuery(document).ready(function() {
                         child_callback: um_ajax_source,
                         child_name:  me.attr('name'),
                         members_directory:  me.attr('data-mebers-directory'),
-                        form_id: form_id
+                        form_id: form_id,
+	                    nonce: um_scripts.nonce
                     },
                     success: function( data ){
                         if( data.status == 'success' && parent.val() != '' ){
